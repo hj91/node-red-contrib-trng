@@ -1,4 +1,3 @@
-```
 # node-red-contrib-trng
 
 A Node-RED module that attempts to be a True Random Number Generator (TRNG) for generating highly random data when triggered.
@@ -11,32 +10,28 @@ A Node-RED module that attempts to be a True Random Number Generator (TRNG) for 
 
 ## Installation
 
-Using the Node-RED editor:
+### Using the Node-RED editor:
 
 1. Click the hamburger menu in the top right corner.
 2. Select "Manage Palette".
 3. In the "User Settings" window, switch to the "Install" tab.
 4. Search for `node-red-contrib-trng` and click "Install".
 
-Using npm:
+### Using npm:
 
 Run the following command in your Node-RED user directory (typically `~/.node-red`):
 
-```
+```bash
 npm install node-red-contrib-trng
 ```
 
-Restart your Node-RED instance to load the new module.
-
 ## Usage
 
-The TRNG node can be found in the Node-RED editor under the "function" category. Drag the node into your flow and connect it as needed.
+1. Drag the "TRNG" node from the palette into the workspace.
+2. Double-click the node to configure its properties, such as output length.
+3. Wire the "TRNG" node to other nodes as needed (e.g., a debug node to display the output).
+4. Deploy the flow and trigger the "TRNG" node to generate random data.
 
-The input message should contain the following properties:
-
-- `msg.length` (Optional): The desired length of the random data as a hexadecimal string. If not specified, the default length is 8 characters.
-
-The output message will contain the payload with the generated random data as a hexadecimal string.
 
 ## Example
 
