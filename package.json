@@ -1,0 +1,38 @@
+{
+  "name": "node-red-contrib-trng",
+  "version": "1.0.0",
+  "description": "A Node-RED module for generating random data using a hybrid approach.",
+  "main": "trng.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "nodes": {
+      "trng": "./trng.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hj91/node-red-contrib-trng"
+  },
+  "keywords": [
+    "node-red",
+    "trng",
+    "random",
+    "random number generator",
+    "security",
+    "cryptography",
+    "Truly Random Number Generator"
+  ],
+  "author": {
+    "name": "Harshad Joshi",
+    "email": "harshad@bufferstack.io"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/hj91/node-red-contrib-trng/issues"
+  },
+  "homepage": "https://bufferstack.io",
+  "dependencies": {}
+}
+
