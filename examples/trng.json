@@ -1,0 +1,84 @@
+[
+    {
+        "id": "92a0d44a7f9b4414",
+        "type": "tab",
+        "label": "trng",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0bf1a37f3eb66c29",
+        "type": "trng",
+        "z": "92a0d44a7f9b4414",
+        "name": "",
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "efe21c913f2365a5"
+            ]
+        ]
+    },
+    {
+        "id": "72343ba0847b0ed8",
+        "type": "inject",
+        "z": "92a0d44a7f9b4414",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "length",
+                "v": "10",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 180,
+        "wires": [
+            [
+                "0bf1a37f3eb66c29"
+            ]
+        ]
+    },
+    {
+        "id": "efe21c913f2365a5",
+        "type": "debug",
+        "z": "92a0d44a7f9b4414",
+        "name": "debug 138",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 650,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "b659b0ae34bcc193",
+        "type": "comment",
+        "z": "92a0d44a7f9b4414",
+        "name": "TRNG ",
+        "info": "Generate some random data using Truly Random Number Generator ",
+        "x": 170,
+        "y": 60,
+        "wires": []
+    }
+]
